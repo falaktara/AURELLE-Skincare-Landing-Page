@@ -1,0 +1,451 @@
+/* GENERAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: #40352e;
+    background-color: #faf8f4;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* NAVBAR */
+
+.navbar {
+    background-color: #faf8f4;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: #59483c;
+}
+
+.nav-link {
+    color: #59483c;
+    margin-left: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #a47b60;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 600px;
+
+    background:
+        linear-gradient(rgba(35, 25, 20, 0.35), rgba(35, 25, 20, 0.35)),
+        url("https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+
+    padding: 80px 10%;
+}
+
+.hero-content {
+    color: white;
+    max-width: 550px;
+}
+
+.hero-small {
+    letter-spacing: 4px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    font-style: italic;
+    color: #e9d5c4;
+}
+
+.hero-description {
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 430px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    display: inline-block;
+    background-color: #e9d5c4;
+    color: #44352c;
+    padding: 13px 28px;
+    border: none;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #fff;
+    color: #44352c;
+}
+
+
+/* SECTION HEADINGS */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.small-heading {
+    color: #a47b60;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2,
+.about-section h2,
+.newsletter-section h2,
+.contact-section h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+    color: #81756d;
+}
+
+
+/* PRODUCTS SECTION */
+
+.products-section {
+    padding: 100px 0;
+}
+
+.product-card {
+    background-color: #fff;
+    height: 100%;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 25px;
+}
+
+.product-category {
+    color: #a47b60;
+    font-size: 11px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.product-info h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #81756d;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.product-info h4 {
+    font-size: 18px;
+    margin: 15px 0;
+    color: #59483c;
+}
+
+.shop-btn {
+    background: transparent;
+    border: 1px solid #9b806c;
+    color: #59483c;
+    padding: 10px 18px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    background-color: #59483c;
+    color: white;
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+    padding: 100px 0;
+    background-color: #f0ebe4;
+}
+
+.about-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.about-section p:not(.small-heading) {
+    color: #776b63;
+    line-height: 1.9;
+    margin-bottom: 20px;
+}
+
+.about-section .main-btn {
+    margin-top: 10px;
+}
+
+
+/* TESTIMONIALS SECTION */
+
+.testimonials-section {
+    padding: 100px 0;
+    background-color: #faf8f4;
+}
+
+.testimonial-card {
+    height: 100%;
+    background-color: #fff;
+    padding: 35px 25px;
+    text-align: center;
+    border: 1px solid #eee6dd;
+    transition: 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.stars {
+    color: #b28b65;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.testimonial-card p {
+    color: #776b63;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.testimonial-card h4 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #59483c;
+}
+
+
+/* NEWSLETTER SECTION */
+
+.newsletter-section {
+    padding: 90px 20px;
+    text-align: center;
+    background-color: #e9dfd3;
+}
+
+.newsletter-section > .container > p:not(.small-heading) {
+    color: #776b63;
+    margin-bottom: 25px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: 30px auto 0;
+}
+
+.newsletter-form input {
+    flex: 1;
+    min-width: 0;
+    padding: 14px;
+    border: 1px solid #c9b9a9;
+    outline: none;
+    background-color: #faf8f4;
+}
+
+.newsletter-form button {
+    padding: 14px 25px;
+    background-color: #59483c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #806653;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-section {
+    padding: 90px 20px;
+    text-align: center;
+    background-color: #faf8f4;
+}
+
+.contact-section > .container > p:not(.small-heading) {
+    color: #81756d;
+    margin-bottom: 30px;
+}
+
+.contact-details {
+    margin-top: 30px;
+    line-height: 2;
+    color: #776b63;
+}
+
+.contact-details strong {
+    color: #59483c;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #44372f;
+    color: #f5eee7;
+    padding: 50px 0 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 35px;
+}
+
+.footer h3 {
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+.footer p {
+    color: #d4c6b9;
+    font-size: 13px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #f5eee7;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #d9bda5;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    border-top: 1px solid #69584b;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.copyright p {
+    margin: 0;
+    font-size: 12px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 500px;
+        padding: 60px 8%;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .section-heading h2,
+    .about-section h2,
+    .newsletter-section h2,
+    .contact-section h2 {
+        font-size: 32px;
+    }
+
+    .about-image {
+        height: 350px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+}
